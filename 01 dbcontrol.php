@@ -13,7 +13,7 @@
             $this->text_debug("Database Connect Success");
           }
         }
-        public function query($sql){
+        public function sel_query($sql){
           $result = $this->db->query($sql);
           $data = $result->fetch_all(MYSQLI_ASSOC);
           if($this->debug_mode==true)
@@ -28,6 +28,10 @@
           if ($this->debug_mode==true)
             echo $text;
         }
+        public function query_only($sql){
+            $result = $this->db->query($sql);
+            return $result;
+          }
     }
     // $my_db = new db("ben","dZnrrgsB2IrdpBl8","book",true);
     // $my_db->query("select * from user");
