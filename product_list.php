@@ -13,7 +13,7 @@
 <body onload="load_Doc()">
 <center><div id="out"></div><div id="out2"></div></center>
     <script>
-    let cus_id = 1234;
+    let cus_id = 1;
     let arr;
     let label = ["product_id","รหัสสินค้า","ชื่อสินค้า","brand","หน่วยนับ","ราคา","จำนวนสินค้า"];
     function load_Doc(){
