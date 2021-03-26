@@ -1,4 +1,9 @@
 <?php
+    session_start();
+    $_SESSION['cus_id']=1234;
+?>
+
+<?php
     class database {
     private $db;
         function connect() {
@@ -19,7 +24,7 @@
             $this->db->close();
         }
     }
-    $db = new database();
+    // $db = new database();
     #$db->connect();
     #print_r($db->query("SELECT * FROM product"));
     #$db->close();
